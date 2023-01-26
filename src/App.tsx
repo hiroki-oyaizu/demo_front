@@ -37,6 +37,15 @@ function App() {
         <div>
           <Link to={"/tweet_new"}>ツイート投稿ページ</Link>
         </div>
+        <div>
+          <Link to={"/backg"}>背景画像確認テスト</Link>
+        </div>
+        <div>
+          <Link to={"/genres_index"}>家計簿一覧</Link>
+        </div>
+        <div>
+          <Link to={"/genres_posts"}>家計簿登録</Link>
+        </div>
       </div>
     </>
   );

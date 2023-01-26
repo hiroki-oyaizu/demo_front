@@ -14,7 +14,19 @@ import { PurchaseNew } from "../pages/purchase /new";
 import { NewTweet } from "../pages/tweet/new";
 import { TweetIndex } from "../pages/tweet";
 import { EditFormTweet } from "../components/tweet/EditFormTweet";
-import { Test } from "../pages/Test/Test";
+
+import { FormTest } from "../pages/Test/FormTest";
+import { ShowBranch } from "../pages/Test/ShowBranch";
+import { BackGround } from "../pages/Test/BackGround";
+import { Login } from "../pages/login/Login";
+import { GenreNew } from "../pages/genre/new";
+import { GenreIndex } from "../pages/genre";
+import { GenreShow } from "../pages/genre/show";
+import { Responsive } from "../pages/Test/Responsive";
+import { Test } from "../pages/Test/game2";
+import { GridTest } from "../pages/Test/GridTest";
+import { Weater } from "../pages/Test/Weater";
+import { AnimalIndex } from "../pages/animal";
 export const Routers = () => {
   return (
     <>
@@ -26,6 +38,7 @@ export const Routers = () => {
         <Route path="/posts_edit/:id" element={<EditPost />} />
         <Route path="/posts_index/posts_show/:id" element={<ShowPosts />} />
         <Route path="/signin" element={<Signin />} />
+        <Route path="/login" element={<Login />} />
         <Route path="user_index" element={<UserIndex />} />
         <Route path="user_index/edit_user/:id" element={<UserEdit />} />
         <Route path="comment_new/:id" element={<CommentNew />} />
@@ -34,6 +47,16 @@ export const Routers = () => {
         <Route path="/tweet_new" element={<NewTweet />} />
         <Route path="/tweet_edi/:id" element={<EditFormTweet />} />
         <Route path="/test" element={<Test />} />
+        <Route path="form_test" element={<FormTest />} />
+        <Route path="/show" element={<ShowBranch />} />
+        <Route path="/backg" element={<BackGround />} />
+        <Route path="/genres_index" element={<GenreIndex />} />
+        <Route path="/genres_posts" element={<GenreNew />} />
+        <Route path="/genres/:id" element={<GenreShow />} />
+        <Route path="/res" element={<Responsive />} />
+        <Route path="/grid" element={<GridTest />} />
+        <Route path="/weater" element={<Weater />} />
+        <Route path="/animal" element={<AnimalIndex />} />
       </Routes>
     </>
   );

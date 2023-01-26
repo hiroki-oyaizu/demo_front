@@ -1,6 +1,6 @@
 ゴール
-フォームに文字を入力したら入力した内容の漫画一覧が取得される
-
+ボタンを押したら背景画像が変化する
+class名を変える
 準備
 ページを作成する
 ルーティングの設定
@@ -8,8 +8,8 @@ App.tsxにリンクを作成する
 
 
 HTML
-インプットフォーム
-登録ボタン
+ボタン
+背景の色を変える
 
 トリガー
 ボタンを押したら
@@ -18,10 +18,125 @@ HTML
 イベント
 
 
-完了ボタンを押したらどのtodoか判断し現在のinCompleteTodoの中から削除
 
-完了したtodoを完了のtodoに移動させる
+pages作成
+ルーティング作成
 
 
-戻す
-か
+コンポーネントのページ
+1行のtextfield
+税抜税込selectbox
+日付を登録するカレンダー
+登録ボタン
+
+
+
+
+
+typeで型を作成
+:genres_title string
+:tax_type     number
+:buy_day      any
+
+hooks作成 usegenre
+axiosを使ってデータ取得
+try catachでエラーハンドリング
+
+pageでhooksをインポート
+propsとしてコンポーネントに渡す
+
+
+空のページを作るpages
+ルーティングの設定をする
+app.tsxでリンク作成
+
+コンポーネントを作る
+pageにコンポーネントを置く
+確認する
+
+家計簿のタイトルをおく
+
+空のstateを作る[Allgenle, setAllgenle]
+usegenreに全データ取得のApiを作る
+try catach 
+if　status. 200
+
+return {Allgenle, 関数}
+
+pages内でuseEffect使用
+propsを渡す
+
+コンポーネントでpropsを受け取る
+型を宣言する
+mapを使って表示する
+
+
+pages作成
+ルーティングの設定
+useParamsを使用
+家計簿一覧から遷移確認
+
+
+コンポーネントページ作成
+pagesでコンポーネント配置
+
+usegenreでstateを定義
+const [genle, setGenle]
+型を定義
+
+useParams使用
+取得のApi作成
+try catach
+return{2つ}　で返す
+
+pagesフォルダでfetch
+コンポーネントをpagesに渡す
+
+Propsを受け取る型も定義
+表示させる
+
+
+family_treeモデルを作る
+カラムを決める
+price　金額
+note 備考
+purchase＿day
+rails db:migrate
+
+コントローラーを作る
+serviceクラスを作る
+
+アソシエーションを組む
+ルーティングをネストで設定
+rails routesで確認
+
+家計簿のジャンル詳細ページにて金額等の入力フォームを作成する
+
+detailgenreページにてフォームを作成する
+
+usePriceにロジック作成
+try catach
+保存処理をaxiosを使って作成
+
+レスポンシブによって背景の色を変化させたい
+
+ページを作成する
+ルーティングの設定
+
+Boxにheightとwidth 100%
+背景色　赤
+
+
+ページを作成する
+ルーティング作成
+
+コンポーネントページ作成
+ページ表示確認
+型作成
+
+axiosでデータ取得
+コンポーネントをpagesに渡す
+
+
+state定義
+mapで表示
